@@ -63,10 +63,10 @@ int main()
 				a = i; //a y b son las coordenadas de la manzana
 				b = j;
 				tablero[i][j] = 254;
-				tablero[v + 1][w] = 178;
+				tablero[v + 1][w] = 178; //Hace que la serpiente aparezca un cuadrado más larga
 			}
 			else
-				tablero[v + 1][w] = ' ';
+				tablero[v + 1][w] = ' '; //Si no toca la manzana, se elimina la serpiente en la coordenada anterior y únicamente aparece como un cuadrado
 			printf("________________________________________\n");
 			for (i = 0; i < tv; i++)
 			{
@@ -91,10 +91,10 @@ int main()
 				a = i; //a y b son las coordenadas de la manzana
 				b = j;
 				tablero[i][j] = 254;
-				tablero[v - 1][w] = 178;
+				tablero[v - 1][w] = 178; //Hace que la serpiente aparezca un cuadrado más larga
 			}
 			else
-				tablero[v - 1][w] = ' ';
+				tablero[v - 1][w] = ' '; //Si no toca la manzana, se elimina la serpiente en la coordenada anterior y únicamente aparece como un cuadrado
 			printf("________________________________________\n");
 			for (i = 0; i < tv; i++)
 			{
@@ -119,10 +119,10 @@ int main()
 				a = i; //a y b son las coordenadas de la manzana
 				b = j;
 				tablero[i][j] = 254;
-				tablero[v][w + 1] = 178;
+				tablero[v][w + 1] = 178; //Hace que la serpiente aparezca un cuadrado más larga
 			}
 			else
-				tablero[v][w + 1] = ' ';
+				tablero[v][w + 1] = ' '; //Si no toca la manzana, se elimina la serpiente en la coordenada anterior y únicamente aparece como un cuadrado
 			printf("________________________________________\n");
 			for (i = 0; i < tv; i++)
 			{
@@ -147,10 +147,10 @@ int main()
 				a = i; //a y b son las coordenadas de la manzana
 				b = j;
 				tablero[i][j] = 254;
-				tablero[v][w - 1] = 178;
+				tablero[v][w - 1] = 178; //Hace que la serpiente aparezca un cuadrado más larga
 			}
 			else
-				tablero[v][w - 1] = ' ';
+				tablero[v][w - 1] = ' '; //Si no toca la manzana, se elimina la serpiente en la coordenada anterior y únicamente aparece como un cuadrado
 			printf("________________________________________\n");
 			for (i = 0; i < tv; i++)
 			{
