@@ -5,7 +5,7 @@ Entre los juegos que nos gustaría añadir se encuentran el tetris, el buscamina
 
 Descripción breve del proyecto a realizar (2-3 frases).
 
-## Susana Guardia Pérez & Jorge Gómez-Pamo González-Cela jorgegpamo1299
+## Susana Guardia Pérez sguardia6 & Jorge Gómez-Pamo González-Cela jorgegpamo1299
 
 Nombres, apellidos, y usuario GitHub de los integrantes del equipo.
 
