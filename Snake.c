@@ -159,9 +159,3 @@ int main()
 	}
 	return 0;
 }
-
-	/*while(a==v && b==w)
-	{
-	tablero[v][w] = malloc (sizeof(int+1));
-	}
-	*/
