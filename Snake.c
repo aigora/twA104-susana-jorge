@@ -12,17 +12,13 @@ int main()
 	printf("Bienvenido al juego de snake.\nUtiliza las flechas para mover a tu serpiente y presiona esc para abandonar la partida.\nCualquier otra tecla que no sirva para mover la serpiente no funcionara.\n");
 	system("pause");
 	system("cls");
-	printf("________________________________________\n");
-	for (i = 0; i < tv; i++) //for anidado para crear el tablero
+	for (i = 0; i < tv; i++)
 	{
-		printf("|");
 		for (j = 0; j < th; j++)
 		{
 			tablero[i][j] = ' ';
 		}
-		printf("|\n");
 	}
-	printf("________________________________________");
 	srand(time(NULL));
 	i = (rand() % tv); //posición aleatoria para la manzana
 	j = (rand() % th);
@@ -67,17 +63,6 @@ int main()
 			}
 			else
 				tablero[v + 1][w] = ' '; //Si no toca la manzana, se elimina la serpiente en la coordenada anterior y únicamente aparece como un cuadrado
-			printf("________________________________________\n");
-			for (i = 0; i < tv; i++)
-			{
-				printf("|");
-				for (j = 0; j < th; j++)
-				{
-					printf("%c", tablero[i][j]);
-				}
-				printf("|\n");
-			}
-			printf("________________________________________");
 			break;
 
 		case 80:
@@ -95,17 +80,6 @@ int main()
 			}
 			else
 				tablero[v - 1][w] = ' '; //Si no toca la manzana, se elimina la serpiente en la coordenada anterior y únicamente aparece como un cuadrado
-			printf("________________________________________\n");
-			for (i = 0; i < tv; i++)
-			{
-				printf("|");
-				for (j = 0; j < th; j++)
-				{
-					printf("%c", tablero[i][j]);
-				}
-				printf("|\n");
-			}
-			printf("________________________________________");
 			break;
 
 		case 75:
@@ -123,17 +97,6 @@ int main()
 			}
 			else
 				tablero[v][w + 1] = ' '; //Si no toca la manzana, se elimina la serpiente en la coordenada anterior y únicamente aparece como un cuadrado
-			printf("________________________________________\n");
-			for (i = 0; i < tv; i++)
-			{
-				printf("|");
-				for (j = 0; j < th; j++)
-				{
-					printf("%c", tablero[i][j]);
-				}
-				printf("|\n");
-			}
-			printf("________________________________________");
 			break;
 
 		case 77:
@@ -151,19 +114,23 @@ int main()
 			}
 			else
 				tablero[v][w - 1] = ' '; //Si no toca la manzana, se elimina la serpiente en la coordenada anterior y únicamente aparece como un cuadrado
-			printf("________________________________________\n");
-			for (i = 0; i < tv; i++)
-			{
-				printf("|");
-				for (j = 0; j < th; j++)
-				{
-					printf("%c", tablero[i][j]);
-				}
-				printf("|\n");
-			}
-			printf("________________________________________");
+			
 			break;
 		}
+		printf("________________________________________\n");
+		for (i = 0; i < tv; i++)
+		{
+			printf("|");
+			for (j = 0; j < th; j++)
+			{
+				printf("%c", tablero[i][j]);
+			}
+			printf("|\n");
+		}
+		printf("________________________________________");
 	}
 	return 0;
 }
+/*Problema:
+No se mueve el segundo cuadrado de la serpiente.
+¿Asignación dinámica de memoria?*/
