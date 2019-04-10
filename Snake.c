@@ -56,7 +56,6 @@ int main()
 			system("cls");
 			v = v - 1;
 			tablero[v][w] = 178;
-			tablero[v + 1][w] = ' ';
 			if (tablero[v + 1][w] == tablero[a][b])
 			{
 				i = (rand() % tv); //posición aleatoria para la manzana
@@ -64,7 +63,10 @@ int main()
 				a = i; //a y b son las coordenadas de la manzana
 				b = j;
 				tablero[i][j] = 254;
+				tablero[v + 1][w] = 178;
 			}
+			else
+				tablero[v + 1][w] = ' ';
 			printf("________________________________________\n");
 			for (i = 0; i < tv; i++)
 			{
@@ -82,7 +84,6 @@ int main()
 			system("cls");
 			v = v + 1;
 			tablero[v][w] = 178;
-			tablero[v - 1][w] = ' ';
 			if (tablero[v - 1][w] == tablero[a][b])
 			{
 				i = (rand() % tv); //posición aleatoria para la manzana
@@ -90,7 +91,10 @@ int main()
 				a = i; //a y b son las coordenadas de la manzana
 				b = j;
 				tablero[i][j] = 254;
+				tablero[v - 1][w] = 178;
 			}
+			else
+				tablero[v - 1][w] = ' ';
 			printf("________________________________________\n");
 			for (i = 0; i < tv; i++)
 			{
@@ -108,7 +112,6 @@ int main()
 			system("cls");
 			w = w - 1;
 			tablero[v][w] = 178;
-			tablero[v][w + 1] = ' ';
 			if (tablero[v][w + 1] == tablero[a][b])
 			{
 				i = (rand() % tv); //posición aleatoria para la manzana
@@ -116,7 +119,10 @@ int main()
 				a = i; //a y b son las coordenadas de la manzana
 				b = j;
 				tablero[i][j] = 254;
+				tablero[v][w + 1] = 178;
 			}
+			else
+				tablero[v][w + 1] = ' ';
 			printf("________________________________________\n");
 			for (i = 0; i < tv; i++)
 			{
@@ -134,15 +140,17 @@ int main()
 			system("cls");
 			w = w + 1;
 			tablero[v][w] = 178;
-			tablero[v][w - 1] = ' ';
-			if (tablero[v][w + 1] == tablero[a][b])
+			if (tablero[v][w - 1] == tablero[a][b])
 			{
 				i = (rand() % tv); //posición aleatoria para la manzana
 				j = (rand() % th);
 				a = i; //a y b son las coordenadas de la manzana
 				b = j;
 				tablero[i][j] = 254;
+				tablero[v][w - 1] = 178;
 			}
+			else
+				tablero[v][w - 1] = ' ';
 			printf("________________________________________\n");
 			for (i = 0; i < tv; i++)
 			{
